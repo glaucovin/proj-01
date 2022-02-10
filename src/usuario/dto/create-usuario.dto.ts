@@ -1,6 +1,6 @@
-import { Prisma } from '@prisma/client';
+import { Usuario } from '../entities/usuario.entity';
 
-export class CreateUsuarioDto implements Prisma.UsuarioCreateInput {
+export class CreateUsuarioDto extends Usuario {
   email: string;
   nome: string;
   criado_em?: string | Date;
